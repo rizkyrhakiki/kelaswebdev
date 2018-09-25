@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Video</title>
+    <title>Contoh Program Javascript</title>
+
+    <SCRIPT language="Javascript">
+        function pesan() {
+            alert("memanggil javascript lewat body onload")
+        }
+    </SCRIPT>
 </head>
 
 <body>
@@ -30,22 +36,12 @@
                 </ul>
             </nav>
             <div id="content">
-                <div id="single" style="width:580px;">
-                    <h2>Galeri Video</h2>
-                    <p>
-                        <h2 class="video-title"><a href="video-1.html">Introduction Budayaku</a></h2>
-                        Uploaded on June 2011, 2099 views.
-                    </p>
-                    <p>
-                        <h2 class="video-title"><a href="video-2.html">Dapur Umami -
-                                Chicken Wings</a></h2>
-                        Uploaded on September 2011, 39 views.
-                    </p>
-                    <p>
-                        <h2 class="video-title"><a href="video-3.html">Bear in the
-                                River</a></h2>
-                        Uploaded on November 2011, 3 views.
-                    </p>
+                <div id="single" style="width:580px;" onload="pesan()">
+                    Pembuatan fungsi dan cara pemanggilannya
+                    <center>
+                        <img src="img/comingsoon.gif" alt="" width="70%">
+                    </center>
+
                 </div>
 
             </div>

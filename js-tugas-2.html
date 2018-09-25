@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Video</title>
+    <title>Aplikasi Kalkulator</title>
 </head>
 
 <body>
@@ -31,21 +31,20 @@
             </nav>
             <div id="content">
                 <div id="single" style="width:580px;">
-                    <h2>Galeri Video</h2>
-                    <p>
-                        <h2 class="video-title"><a href="video-1.html">Introduction Budayaku</a></h2>
-                        Uploaded on June 2011, 2099 views.
-                    </p>
-                    <p>
-                        <h2 class="video-title"><a href="video-2.html">Dapur Umami -
-                                Chicken Wings</a></h2>
-                        Uploaded on September 2011, 39 views.
-                    </p>
-                    <p>
-                        <h2 class="video-title"><a href="video-3.html">Bear in the
-                                River</a></h2>
-                        Uploaded on November 2011, 3 views.
-                    </p>
+                    <div style="margin-bottom: 10px;">
+                        <label for="bil1">Bil 1 </label>
+                        <input style="margin-bottom: 20px;" type="number" name="bil1" id="bil1"> <br>
+                        <label  for="bil2">Bil 2 </label>
+                        <input style="margin-bottom: 20px;" type="number" name="bil2" id="bil2"> <br>
+                        <label for="hasil">Hasil</label>
+                        <input style="margin-bottom: 20px;" type="number" name="hasil" id="hasil"> <br>
+                    </div>
+                    <div>
+                        <input type="button" value="+" onclick="tambah()">
+                        <input type="button" id="kurang" value="-" onclick="kurang()">
+                        <input type="button" id="kali" value="x" onclick="kali()">
+                        <input type="button" id="bagi" value="/" onclick="bagi()">
+                    </div>
                 </div>
 
             </div>
@@ -96,5 +95,31 @@
     </div>
 
 </body>
+<SCRIPT language="Javascript">
+    function tambah() {
+        val1 =parseInt(document.getElementById("bil1").value);
+        val2 =parseInt(document.getElementById("bil2").value);
+        var tambahin=val1+val2;
+        document.getElementById("hasil").value=tambahin;
+    }
+    function kurang() {
+        val1 =parseInt(document.getElementById("bil1").value);
+        val2 =parseInt(document.getElementById("bil2").value);
+        var kurangin=val1-val2;
+        document.getElementById("hasil").value=kurangin;
+    }
+    function kali(){
+        val1 =parseInt(document.getElementById("bil1").value);
+        val2 =parseInt(document.getElementById("bil2").value);
+        var kali=val1*val2;
+        document.getElementById("hasil").value=kali;
+    }
+    function bagi(){
+        val1 =parseInt(document.getElementById("bil1").value);
+        val2 =parseInt(document.getElementById("bil2").value);
+        var bagi=val1/val2;
+        document.getElementById("hasil").value=bagi;
+    }
+</SCRIPT>
 
 </html>
